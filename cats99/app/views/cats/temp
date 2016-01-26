@@ -1,0 +1,9 @@
+<!-- <label for="cat_sex_male">Male</label>
+<input type="radio" name="cat[sex]" id="cat_sex_male" value="M">
+<label for="cat_sex_female">Female</label>
+<input type="radio" name="cat[sex]" id="cat_sex_female" value="F">
+
+
+
+<label for="cat_description">Description:</label>
+<input type="textarea" name="cat[description]"/> -->
