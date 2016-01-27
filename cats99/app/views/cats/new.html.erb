@@ -1,4 +1,12 @@
-<form action="<%= cats_url %>" method="post">
+<%= render "form", cat: @cat, action: :new %>
+
+
+
+
+
+
+
+<!-- <form action="<%= cats_url %>" method="post">
   <label for="cat_name">Name:</label>
   <input type="text" name="cat[name]" id="cat_name"/>
   <br>
@@ -10,7 +18,7 @@
 
   <br>
   <label for="cat_coat_color">Color</label>
-  <!-- dropdown -->
+
   <select name="cat[color]" id="cat_coat_color">
     <option disabled selected></option>
     <option value="calico">Calico</option>
@@ -31,4 +39,4 @@
   <br>
 
   <input type="submit" value="Submit"/>
-</form>
+</form> -->
