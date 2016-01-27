@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: cats
+#
+#  id          :integer          not null, primary key
+#  birth_date  :date             not null
+#  color       :string           not null
+#  name        :string           not null
+#  sex         :string(1)        not null
+#  description :text
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 class CatsController < ApplicationController
   def index
     @cats = Cat.all
@@ -20,7 +34,6 @@ class CatsController < ApplicationController
       redirect_to cats_url
     else
       render text: @cat.errors.full_messages
-      fail "Did not save!"
     end
   end
 

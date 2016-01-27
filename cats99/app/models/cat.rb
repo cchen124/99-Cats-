@@ -16,4 +16,7 @@ class Cat < ActiveRecord::Base
   validates :birth_date, :color, :name, :sex, presence: true
   validates :color, inclusion: ["calico", "black", "white", "gold"]
   validates :sex, inclusion: ["M", "F"]
+
+  has_many :cat_rental_requests
+  
 end
